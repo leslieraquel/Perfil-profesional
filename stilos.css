@@ -11,3 +11,51 @@
 #body{
     background-color:blanchedalmond;
 }
+
+.inicio{
+    width: 0%;
+}
+
+.final{
+    width: 85%;
+}
+.animacion{
+    transition: all 2s ease .5s;
+}
+.iniciophp{
+    width: 0%;
+}
+.finalphp{
+    width: 60%;
+}
+.animacionphp{
+    transition: all 2s ease .5s;
+}
+
+.iniciojs{
+    width: 0%;
+}
+.finaljs{
+    width: 40%;
+}
+.animacionjs{
+    transition: all 2s ease .5s;
+}
+.iniciogit{
+    width: 0%;
+}
+.finalgit{
+    width: 85%;
+}
+.animaciongit{
+    transition: all 2s ease .5s;
+}
+.iniciohtml{
+    width: 0%;
+}
+.finalhtml{
+    width: 90%;
+}
+.animacionhtml{
+    transition: all 2s ease .5s;
+}

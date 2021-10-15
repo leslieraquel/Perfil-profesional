@@ -24,15 +24,16 @@
     <!-- Contenedor parte izquierda -->
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-4">
                 <!-- Foto de Perfil -->
                     <img src="..\leslie.jpg" width="210" height="200" class="rounded-circle" border="2" >
                     <br>
                     <br>
-                    <h3>Raquel Guaman</h3>
+                    <h3>Raquel Guam&aacuten</h3>
                     <p>22 años - Soltera</p>
                     <!-- Datos personales en una card-->
-                    <div class="card w-100">
+                    <div class="col-9">
+                    <div class="card border-secondary bg-light mb-3">
                         <div class="card-body">
                             <!--Insertando Iconos-->
                             <i class="fas fa-briefcase"></i><text>&nbsp;&nbsp;&nbsp;Programador Junior</text> <br>
@@ -46,7 +47,7 @@
                     <br>
                     <h3>Aptitudes</h3>
                     <!--Realizando una card-->
-                    <div class="card w-100">
+                    <div class="card card border-secondary bg-light mb-3">
                     <!--Realizando un listado-->
                     <ul>
                         <br>
@@ -61,13 +62,17 @@
                         <li>Analisis de casos de uso</li>
                         <br>
                         <li>Gran capacidad de observacion</li>
+                        <br>
                     </ul>
                     </div>
+    
+            </div>
+        
             </div>
             <!---------------------------------------------------------------------------------------------------->
             <!--Colocandome en la columna 5-8-->
              <div class="col-8">
-                    <h3>Perfil Personal</h3>
+                    <h3>Resumen Profesional</h3>
                     <!--Insertando parrafo-->
                     <p class="text-align: justify">
                         Tecnologa en Desarrollo de software, responsable con iniciativa,confiable y puntualidad,
@@ -76,15 +81,15 @@
                         Manejo exelente de Office como programas de Excel, Word, Power Point, etc.
                         Ademas tengo conocimiento en consolas de windows y linux.
                     </p>
-                    <h3>Formacion</h3>
+                    <h3>Formaci&oacuten</h3>
                     <p>
                         Tnlga. Desarrollo de Sofware <br>
-                        Instituto Superior Tecnologico Universitario "Rumiñahui"  
+                        Instituto Tecnologico Universitario "Rumiñahui"  
                     </p>
                     <h3>Cursos Realizados</h3>
                     <br>
                     <!--Realizando cards-body-->
-                    <div class="card">
+                    <div class="card border-secondary bg-light mb-3">
                         <div class="card-body">
                             <h5 class="card-tittle">Curso de JavaScript</h5>
                             <p class="card-text">Udemy&nbsp;:&nbsp; Universidad JavaScript</p>
@@ -92,7 +97,7 @@
                         </div>
                     </div>
                     <br>
-                    <div class="card">
+                    <div class="card border-secondary bg-light mb-3">
                         <div class="card-body">
                             <h5 class="card-tittle">Curso de SQLServer</h5>
                             <p class="card-text">Udemy&nbsp;: &nbsp; Master en SQL</p>
@@ -107,42 +112,41 @@
                         <br>
                         <!--Realizando un progress-->
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped bg-success" 
-                                     role="progressbar" 
-                                     style="width: 60%" 
+                                <div id="progresphp" 
+                                     class="progress-bar progress-bar-striped bg-success iniciophp animacionphp" 
+                                     role="progressbar"  
                                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                                 </div> 
                         <br>
                         <font size="5"><label>JavaScript&nbsp;: &nbsp; &nbsp;</label></font>
                         <br>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-warning" 
+                            <div id="progresjs"
+                                 class="progress-bar progress-bar-striped bg-warning iniciojs animacionjs" 
                                  role="progressbar" 
-                                 style="width: 40%" 
                                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
                         </div>
                         <br>
                         <font size="5"><label>SQLServer&nbsp;: &nbsp; &nbsp;</label></font>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-danger" 
+                            <div id="progresar"class="progress-bar progress-bar-striped bg-danger inicio animacion"
                                  role="progressbar" 
-                                 style="width: 85%" 
                                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
                         </div>
                         <br>
                         <font size="5"><label>Git&nbsp;: &nbsp; &nbsp;</label></font>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-primary" 
-                                 role="progressbar" 
-                                 style="width: 90%" 
+                            <div id="progresgit"
+                                 class="progress-bar progress-bar-striped bg-primary iniciogit animaciongit" 
+                                 role="progressbar"  
                                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">85%</div>
                         </div>
                         <br>
                         <font size="5"><label>Html/CSS&nbsp;:&nbsp; &nbsp;</label></font>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" 
-                                 role="progressbar" 
-                                 style="width: 90%" 
+                            <div id="progreshtml"
+                                 class="progress-bar progress-bar-striped bg-success iniciohtml animacionhtml" 
+                                 role="progressbar"  
                                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                        </div> 
                     </div>
@@ -193,7 +197,37 @@
                  </div>
              </div>
              <br>
-         </footer>
+         </footer>  
+         <!------------------------------------------------------------------------------------->
+
+         <script>
+             const animacionProgressphp = () =>{
+                 document.getElementById("progresphp").classList.toggle("finalphp");
+             }
+             setTimeout(animacionProgressphp,3000)
+
+             const animacionProgressjs = () =>{
+                 document.getElementById("progresjs").classList.toggle("finaljs");
+             }
+             setTimeout(animacionProgressjs,4000)
+
+             const animacionProgress = ()=>{
+                document.getElementById("progresar").classList.toggle("final");
+             }
+             setTimeout(animacionProgress, 5000)
+
+             const animacionProgressgit = ()=>{
+                document.getElementById("progresgit").classList.toggle("finalgit");
+             }
+             setTimeout(animacionProgressgit, 6000)
+
+             const animacionProgresshtml = ()=>{
+                document.getElementById("progreshtml").classList.toggle("finalhtml");
+             }
+             setTimeout(animacionProgresshtml, 7000)
+
+
+         </script>
          
 </body>
 </html>
